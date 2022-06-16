@@ -9,22 +9,22 @@ class Navbar extends Component {
         this.setState({ clicked: !this.state.clicked })
     }
 
-    nameShown = () => {
-        if (window.location.pathname != '/Home') {
-            return (
-                <h1 className="navbar-logo">
-                    {/* <a href="/Home">
-                    Diane Tritchler</a> */}
-                </h1>
+    // nameShown = () => {
+    //     if (window.location.pathname != '/Home') {
+    //         return (
+    //             <h1 className="navbar-logo">
+    //                 {/* <a href="/Home">
+    //                 Diane Tritchler</a> */}
+    //             </h1>
 
-            )
-        }
-    }
+    //         )
+    //     }
+    // }
 
     render() {
         return (
             <nav className="NavbarItems">
-                <div className='name' onClick={this.handleNameClick}>{this.nameShown()}</div>
+                {/* <div className='name' onClick={this.handleNameClick}>{this.nameShown()}</div> */}
 
                 <div className='menu-icon' onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
